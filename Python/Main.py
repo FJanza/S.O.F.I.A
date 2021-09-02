@@ -37,13 +37,17 @@ def main():
             elif(opcion[1] == "hora" or opcion[1] == "Hora"):
                 print("5")
                 pass
+
+            elif(opcion[1] == "play" or opcion[1] == "Play"):
+                print("6")
+                pass
         
         elif(opcion[0] == 'Rocket' and opcion[1] == 'League'):                                                                                                                    #comando de salida Rocket League CAMBIAR COMANDO A UNO MAS SENCILLO
-            print("6")
+            print("rocket league")
             pass
 
         else:                                                                                                                                                                     #error de comando
-            print("7")
+            print("sin comando")
             pass    
     
 
