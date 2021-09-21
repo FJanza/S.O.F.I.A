@@ -6,6 +6,10 @@ import wikipedia as wiki
 
 #---------------------------BUSCAR-INFORMACION------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+#cambiar metodo de busqueda por nivel de importancia
+
+
 def Buscar_info(lista_entrada) -> str :
 
     entrada = " ".join(lista_entrada)                                                                      #convierto la lista de entrada en un str
@@ -17,7 +21,7 @@ def Buscar_info(lista_entrada) -> str :
     informacion = wiki.summary(query)                                                                      #busco la informacion requerida
 
                                                                                                            #REDUZCO-LA-INFORMACION
-
+    
     punto = '.'                                                                                            # seteo el char que busco
 
     lst = []
@@ -30,6 +34,7 @@ def Buscar_info(lista_entrada) -> str :
 
             if(len(lst) == 2):                                                                             # una vez que guarde dos posiciones dejar de guardar info
                 break
+
 
 
     informacion_lst = list(informacion)                                                                     # convierto la informacion en una lista
