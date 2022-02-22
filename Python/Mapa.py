@@ -19,6 +19,7 @@ def Mapa(origin,destination):
     if status_code == 0:
         
         duracion_viaje = json_data["route"]["formattedTime"]
+
         largo_viaje = json_data["route"]["distance"]
 
         indicaciones_data = []
@@ -47,6 +48,8 @@ def Mapa(origin,destination):
         info.append(origin)
         info.append(destination)
         info.append(indicaciones)
+        info.append(duracion_viaje)
+        info.append(largo_viaje)
 
         return(info)
 
