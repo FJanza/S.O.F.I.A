@@ -2,8 +2,6 @@
 # pip install pyautogui
 
 
-from os import name
-from sys import _OptExcInfo
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 import webbrowser as web
@@ -15,10 +13,8 @@ from Reconocimiento_voz import Reconocimiento
 from TTS import tts
 
 
-
-
-client_id = 
-client_secret = 
+client_id = 'e0ff1e40d0194bf7b427af1bb6f10504'
+client_secret = '3141e1ee7ed742e09a9e5ed0e72580c2'
 
 
 def Play_musica():
@@ -32,6 +28,7 @@ def Play_musica():
     song = Reconocimiento()
     song = " ".join(song) 
     
+
 
     flag = 0
 
@@ -75,7 +72,7 @@ def Play_musica():
         tts("No se encontro la cancion solocitada, si desea escuchar la lista de temas de este author diga si")
         opcion = Reconocimiento()
 
-        if opcion == "si" or opcion == "Si":
+        if opcion[0] == "si" or opcion[0] == "Si":
             tts("estas son las canciones de {}".format(author))
 
             for i in range(0, len(result["tracks"]["items"])):                                                                                                            #itera para traer un conteo total de los items
@@ -98,4 +95,3 @@ def Play_Pause():
     sleep(3)
 
     pyautogui.press(" ")                                    # apreta spacebar para que de play 
-

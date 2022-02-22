@@ -55,12 +55,12 @@ def main():
                 pass
 
             elif(opcion[1] == "play" or opcion[1] == "Play"):
-
-                 Play_musica()
+                
+                Play_musica()
                 
             
             elif(opcion[1] == "pausa" or opcion[1] == "Pausa"):
-              
+    
                 Play_Pause()
             
 
