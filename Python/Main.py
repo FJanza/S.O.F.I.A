@@ -10,6 +10,19 @@ from Musica import Play_musica
 
 from Musica import Play_Pause
 
+from Mapa import Mapa_bot
+#-----------------------------COMANDOS------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"""
+siempre empezar con Sofía ya que es el nombre del asistente
+luego el comando, que puede ser:
+    *Buenos dias: para que salude
+    *Maps: para que te de indicaciones de como ir a un sitio
+    *Play: para poner musica
+    *Pausa: para pausar la musica
+    *Buscar
+
+
+"""
 #-------------------------------MAIN-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -38,8 +51,8 @@ def main():
                 tts("Buenos dias Janza")
                 
             
-            elif(opcion[1] == "mostrar" or opcion[1] == "Mostrar"):
-                print("2")
+            elif(opcion[1] == "Maps" or opcion[1] == "Mapa"):
+                Mapa_bot()
                 pass
             
             elif((opcion[1] == "Estado" or opcion[1] == "estado") and (opcion[2] == "del" or opcion[2] == "Del") and (opcion[3] == "Sistema" or opcion[3] == "sistema")):
