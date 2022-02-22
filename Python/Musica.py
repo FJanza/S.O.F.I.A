@@ -1,7 +1,7 @@
 # pip install spotipy
 # pip install pyautogui
 
-
+from secret import client_id,client_secret
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 import webbrowser as web
@@ -13,8 +13,8 @@ from Reconocimiento_voz import Reconocimiento
 from TTS import tts
 
 
-client_id = 'e0ff1e40d0194bf7b427af1bb6f10504'
-client_secret = '3141e1ee7ed742e09a9e5ed0e72580c2'
+client_id = client_id
+client_secret = client_secret
 
 
 def Play_musica():
